@@ -32,16 +32,16 @@ If you have any questions or would like to discuss potential opportunities, plea
 
 ## Technologies Used
 
-***NextJS14***
-***ReactJS***
-***TsilwindCSS***
-***TypeScript***
-***Vercel***
+***NextJS14***<br>
+***ReactJS***<br>
+***TsilwindCSS***<br>
+***TypeScript***<br>
+***Vercel***<br>
 
 ## Contact
 
 - **Email:** [theshobhitt@gmail.com](mailto:theshobhitt@gmail.com)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/shobhit-singh-the-programmer)
-- **GitHub:** [Your GitHub Profile](https://github.com/theshobhitsingh)
+- **LinkedIn:** [MyLinkedIn Profile](https://www.linkedin.com/in/shobhit-singh-the-programmer)
+- **GitHub:** [My GitHub Profile](https://github.com/theshobhitsingh)
 
 Thank you for visiting my portfolio!
