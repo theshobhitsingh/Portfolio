@@ -9,8 +9,9 @@ import { Analytics } from "@vercel/analytics/react"
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shobhit Singh | Portfolio",
-  description: "Portfolio of Shobhit Singh, Full-stack developer located in India",
+  title: "𝙎𝙝𝙤𝙗𝙝𝙞𝙩 𝙎𝙞𝙣𝙜𝙝 | 𝙋𝙤𝙧𝙩𝙛𝙤𝙡𝙞𝙤",
+  description:
+    "𝘗𝘰𝘳𝘵𝘧𝘰𝘭𝘪𝘰 𝘰𝘧 𝘚𝘩𝘰𝘣𝘩𝘪𝘵 𝘚𝘪𝘯𝘨𝘩, 𝘍𝘶𝘭𝘭-𝘴𝘵𝘢𝘤𝘬 𝘥𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳 𝘭𝘰𝘤𝘢𝘵𝘦𝘥 𝘪𝘯 𝘐𝘯𝘥𝘪𝘢",
 };
 
 export default function RootLayout({
@@ -24,7 +25,9 @@ export default function RootLayout({
         <ThemeProvider themes={["light", "dark"]} defaultTheme="system">
           <div className="max-w-screen-lg min-h-screen mx-auto flex flex-col justify-center items-center">
             <Navbar />
-            <main className="flex-grow flex flex-col justify-center items-center">{children}</main>
+            <main className="flex-grow flex flex-col justify-center items-center">
+              {children}
+            </main>
             <Footer />
             <Analytics />
           </div>

@@ -1,42 +1,69 @@
-import Link from "next/link"
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
+import Link from "next/link";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { SiLeetcode, SiGeeksforgeeks, SiHackerrank } from "react-icons/si";
+// import { Profile } from "../public/My Profile/images";
 
 const ProfilePicture = () => {
   return (
-    <img src="https://github.com/theshobhitsingh/Portfolio/blob/main/public/My%20Profile/MyProfile.jpeg?raw=true" className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full w-[350px] md:w-2/5 p-3" />
-  )
-}
+    <img
+      src="https://github.com/theshobhitsingh/Portfolio/blob/main/public/My%20Profile/MyProfile.jpeg?raw=true"
+      alt="Profile Picture"
+      className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full w-[350px] md:w-2/5 p-3"
+    />
+  );
+};
 
 const BulletPoints = () => {
   return (
     <ul className="space-y-1 text-xl text-center md:text-left">
-      <li>🧀 based in India</li>
-      <li><a href="mailto:theshobhitt@gmail.com">📧 Let's get in touch!</a></li>
-      <li>📝Download my <a className="link link-primary" href="/PaytonPierceResume.pdf" download="PaytonPierceResume">resume</a></li>
+      <li>🌐 𝑩𝙖𝙨𝙚𝙙 𝙞𝙣 𝙄𝙣𝙙𝙞𝙖</li>
+      <li>
+        <a href="mailto:theshobhitt@gmail.com">📧 𝙇𝙚𝙩'𝙨 𝙜𝙚𝙩 𝙞𝙣 𝙩𝙤𝙪𝙘𝙝!</a>
+      </li>
+      <li>
+        📄𝑫𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙢𝙮{" "}
+        <a
+          className="link link-primary"
+          href="/PaytonPierceResume.pdf"
+          download="PaytonPierceResume"
+        >
+          𝑹𝙚𝙨𝙪𝙢𝙚
+        </a>
+      </li>
     </ul>
-  )
-}
+  );
+};
 
 const WavingHand = () => {
-  return (
-    <span className="animate-wave inline-block">👋</span>
-  )
-}
+  return <span className="animate-wave inline-block">👋</span>;
+};
 
 const socials = [
   {
     icon: <FaGithub />,
-    href: "https://github.com/paytonjewell/"
+    href: "https://github.com/theshobhitsingh",
   },
   {
     icon: <FaLinkedin />,
-    href: "https://linkedin.com/in/payton-pierce/"
+    href: "https://linkedin.com/in/shobhit-singh-the-programmer",
+  },
+  // {
+  //   icon: <FaXTwitter />,
+  //   href: "https://x.com/paytonpiercedev"
+  // },
+  {
+    icon: <SiLeetcode />,
+    href: "https://leetcode.com/u/shobhit_singh_leetcode/",
   },
   {
-    icon: <FaXTwitter />,
-    href: "https://x.com/paytonpiercedev"
-  }
-]
+    icon: <SiGeeksforgeeks />,
+    href: "https://www.geeksforgeeks.org/user/shobhit_singh_gfg/",
+  },
+  {
+    icon: <SiHackerrank />,
+    href: "https://www.hackerrank.com/profile/shobhitsingh2103",
+  },
+];
 
 export default function Home() {
   return (
@@ -47,15 +74,26 @@ export default function Home() {
       <div>
         <div className="text-center md:text-left mb-4">
           <h1 className="text-5xl">
-            Hi, I'm <span className="bg-gradient-to-tl from-indigo-500 to-fuchsia-500 text-transparent bg-clip-text font-bold">Shobhit</span><WavingHand />
+            Hι, I'm{" "}
+            <span className="bg-gradient-to-tl from-indigo-500 to-fuchsia-500 text-transparent bg-clip-text font-bold">
+              丂卄ㄖ乃卄丨ㄒ
+            </span>
+            <WavingHand />
           </h1>
-          <h2 className="text-3xl">I'm a Full-Stack Engineer.</h2>
+          <h2 className="text-3xl">𝑰'𝒎 𝒂 𝑭𝒖𝒍𝒍-𝑺𝒕𝒂𝒄𝒌 𝑬𝒏𝒈𝒊𝒏𝒆𝒆𝒓.</h2>
         </div>
         <BulletPoints />
         {/* socials */}
         <ul className="flex justify-center text-3xl gap-10 mt-4">
           {socials.map((social, index) => (
-            <li key={index} className="hover:scale-125 hover:text-white transition-all ease-in-out"><Link href={social.href} target="_blank">{social.icon}</Link></li>
+            <li
+              key={index}
+              className="hover:scale-125 hover:text-white transition-all ease-in-out"
+            >
+              <Link href={social.href} target="_blank">
+                {social.icon}
+              </Link>
+            </li>
           ))}
         </ul>
       </div>

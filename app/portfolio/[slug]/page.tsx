@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const PortfolioDetail = ({ params }: { params: { slug: string } }) => {
-  return (
-    <div>PortfolioDetail for {params.slug}</div>
-  )
-}
+  return <div>PortfolioDetails for {params.slug}</div>;
+};
 
-export default PortfolioDetail
+export default PortfolioDetail;
