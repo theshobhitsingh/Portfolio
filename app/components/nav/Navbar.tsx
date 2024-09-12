@@ -4,7 +4,7 @@ import MobileNavDropdown from './MobileNavDropdown'
 
 const Logo = ({ className }: { className?: string }) => {
   return (
-    <img alt="" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F008%2F174%2F755%2Flarge_2x%2Fletter-s-logo-s-letter-design-with-square-free-vector.jpg&f=1&nofb=1&ipt=8ce44ae71c9eb8f09e96a91b9cc0d6c22daacbbf850dc0e15f2834e389cb4463&ipo=images" className={`w-20 ${className}`} />
+    <img alt="" src="https://github.com/theshobhitsingh/Portfolio/blob/main/public/logo.png?raw=true" className={`w-20 ${className}`} />
   )
 }
 
