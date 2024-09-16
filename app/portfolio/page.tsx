@@ -100,7 +100,7 @@ const projects = [
     code: "https://github.com/theshobhitsingh/Priority-Scheduler",
   },
   {
-    title: "𝙻𝚒𝚟𝚎 𝚆𝚎𝚎𝚝𝚑𝚎𝚛 𝙰𝚙𝚙",
+    title: "𝐋𝐢𝐯𝐞 𝘞𝘦𝘢𝘵𝘩𝘦𝘳 𝘈𝘱𝘱",
     mockup:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F884849.jpg&f=1&nofb=1&ipt=a7517aac0dbfd994b0d1535326b044ce35884c3e10d01a5cf89f63193c69a3b4&ipo=images",
     live: "https://theshobhitsingh.github.io/live_weather/",
