@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import React, { CSSProperties } from "react";
+import React, { useState } from "react";
 
-const CardContainer: CSSProperties = {
+const CardContainerBase: React.CSSProperties = {
   position: "relative",
   width: "360px",
   height: "400px",
@@ -15,31 +15,36 @@ const CardContainer: CSSProperties = {
   cursor: "pointer",
   color: "white",
   overflow: "hidden",
-  transition: "all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+  transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
   margin: "0 16px",
   background: "rgba(255, 255, 255, 0.15)",
   backdropFilter: "blur(15px) saturate(180%)",
   border: "1px solid rgba(255, 255, 255, 0.2)",
 };
 
-const CardImage: CSSProperties = {
+const CardContainerHover: React.CSSProperties = {
+  transform: "scale(1.05)",
+  boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
+};
+
+const CardImage: React.CSSProperties = {
   width: "100%",
   height: "200px",
   objectFit: "cover",
   borderRadius: "8px",
 };
 
-const CardContent: CSSProperties = {
+const CardContent: React.CSSProperties = {
   flex: 2,
 };
 
-const CardButtons: CSSProperties = {
+const CardButtons: React.CSSProperties = {
   display: "flex",
   justifyContent: "space-between",
   marginTop: "12px",
 };
 
-const Button: CSSProperties = {
+const Button: React.CSSProperties = {
   border: "none",
   color: "white",
   padding: "10px 20px",
@@ -54,17 +59,17 @@ const Button: CSSProperties = {
   margin: "0 5px",
 };
 
-const ButtonSecondary: CSSProperties = {
+const ButtonSecondary: React.CSSProperties = {
   ...Button,
   backgroundColor: "#545AA7",
 };
 
-const ButtonPrimary: CSSProperties = {
+const ButtonPrimary: React.CSSProperties = {
   ...Button,
   backgroundColor: "#0C2340",
 };
 
-const Heading: CSSProperties = {
+const Heading: React.CSSProperties = {
   fontSize: "22px",
   textTransform: "capitalize",
   fontWeight: "700",
@@ -107,7 +112,7 @@ const projects = [
     code: "https://github.com/theshobhitsingh/live_weather",
   },
   {
-    title: "𝙎𝙞𝙢𝙤𝙣 𝙎𝙖𝙮𝙨 𝙾𝚗𝚕𝚒𝚗𝚎 𝙶𝚊𝚖𝚎",
+    title: "𝙎𝙞𝙢𝙤𝙣 𝙎𝙖𝙮𝙨 Ⓞ𝚗𝚕𝚒𝚗𝚎 G𝚊𝚖𝚎",
     mockup:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplays.org%2Fscreenshots%2Fsimon-says-game.png&f=1&nofb=1&ipt=bd4628ee14ba58f6119816a39ed61a01be0a148e55fd1268e8b2ec09a5c47e09&ipo=images",
     live: "https://shobhitsingh.github.io/simon_says/",
@@ -116,6 +121,8 @@ const projects = [
 ];
 
 const Portfolio = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <div style={{ textAlign: "center" }}>
       <p>𝘼𝙡𝙡 𝘾𝙤𝙣𝙩𝙧𝙞𝙗𝙪𝙩𝙞𝙤𝙣𝙨:</p>
@@ -123,7 +130,7 @@ const Portfolio = () => {
         href="https://github.com/theshobhitsingh"
         style={{ textDecoration: "none", color: "#0070f3", fontWeight: "bold" }}
       >
-        קг๏Ŧ𝚒𝚕𝚎𝙼𝚎.𝚍𝚎𝚟
+        קг๏Ŧ𝚒𝚝𝚎𝙼𝚎.𝚍𝚎𝚟
       </Link>
       <div
         style={{
@@ -135,7 +142,15 @@ const Portfolio = () => {
         }}
       >
         {projects.map((project, index) => (
-          <div key={index} style={CardContainer}>
+          <div
+            key={index}
+            style={{
+              ...CardContainerBase,
+              ...(hoveredIndex === index ? CardContainerHover : {}),
+            }}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
             <img src={project.mockup} alt={project.title} style={CardImage} />
             <div style={CardContent}>
               <h1 style={Heading}>{project.title}</h1>

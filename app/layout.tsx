@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/nav/Navbar";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "next-themes";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 const nunito = Nunito({ subsets: ["latin"] });
 

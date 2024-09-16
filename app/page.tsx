@@ -22,11 +22,7 @@ const BulletPoints = () => {
       </li>
       <li>
         📄𝑫𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙢𝙮{" "}
-        <a
-          className="link link-primary"
-          href=""
-          download=""
-        >
+        <a className="link link-primary" href="" download="">
           𝑹𝙚𝙨𝙪𝙢𝙚
         </a>
       </li>
@@ -74,11 +70,12 @@ export default function Home() {
       <div>
         <div className="text-center md:text-left mb-4">
           <h1 className="text-5xl">
-            Hι, I'm{" "}
-            <span className="bg-gradient-to-tl from-indigo-500 to-fuchsia-500 text-transparent bg-clip-text font-bold">
+            𝐇𝐢, I'm{" "}
+            <span className="bg-gradient-to-tl from-indigo-600 to-fuchsia-600 text-transparent bg-clip-text font-bold">
               丂卄ㄖ乃卄丨ㄒ
+              <WavingHand />
             </span>
-            <WavingHand />
+            {/* <WavingHand /> */}
           </h1>
           <h2 className="text-3xl">𝑰'𝒎 𝒂 𝑭𝒖𝒍𝒍-𝑺𝒕𝒂𝒄𝒌 𝑬𝒏𝒈𝒊𝒏𝒆𝒆𝒓.</h2>
         </div>

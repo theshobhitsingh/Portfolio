@@ -7,7 +7,7 @@ interface PromptProps {
 const Prompt = ({ directory, branch = false, content }: PromptProps) => {
   return (
     <p>
-      <span className="text-pink-600 font-semibold">
+      <span className="text-blue-800 font-semibold">
         ~/shobhit-singh{directory}
         <span className="text-success">{branch && " (main)"}</span> $
       </span>{" "}

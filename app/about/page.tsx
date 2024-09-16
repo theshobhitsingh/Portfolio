@@ -50,6 +50,7 @@ const About = () => {
             />
             <SkillList title="𝙁𝙧𝙤𝙣𝙩𝙚𝙣𝙙 𝙎𝙠𝙞𝙡𝙡𝙨" items={skills.FrontendSkills} />
             <SkillList title="𝘽𝙖𝙘𝙠𝙚𝙣𝙙 𝙎𝙠𝙞𝙡𝙡𝙨" items={skills.BackendSkills} />
+            <SkillList title="𝘿𝙖𝙩𝙖𝙗𝙖𝙨𝙚 𝙎𝙠𝙞𝙡𝙡𝙨" items={skills.DatabasesSkills} />
             <SkillList title="𝙎𝙩𝙮𝙡𝙞𝙣𝙜" items={skills.Styling} />
           </ul>
           <ul className="md:text-right">
@@ -57,7 +58,7 @@ const About = () => {
               title="𝙇𝙞𝙗𝙧𝙖𝙧𝙞𝙚𝙨 & 𝙁𝙧𝙖𝙢𝙚𝙬𝙤𝙧𝙠𝙨"
               items={skills.LibrariesFrameworks}
             />
-            <SkillList title="𝙏𝙤𝙤𝙡𝙨𝙊𝙛𝙏𝙝𝙚𝙏𝙧𝙖𝙙𝙚" items={skills.toolsOfTheTrade} />
+            <SkillList title="𝙏𝙤𝙤𝙡𝙨𝙊𝙛𝙏𝙝𝙚𝙏𝙧𝙖𝙙𝙚" items={skills.ToolsOfTheTrade} />
           </ul>
         </div>
       </FakeTerminalWindow>
