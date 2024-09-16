@@ -24,8 +24,8 @@ const BulletPoints = () => {
         📄𝑫𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙢𝙮{" "}
         <a
           className="link link-primary"
-          href="/PaytonPierceResume.pdf"
-          download="PaytonPierceResume"
+          href=""
+          download=""
         >
           𝑹𝙚𝙨𝙪𝙢𝙚
         </a>
