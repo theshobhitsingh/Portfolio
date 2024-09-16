@@ -1,14 +1,14 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { CSSProperties } from "react";
 
-const CardContainer = {
+const CardContainer: CSSProperties = {
   position: "relative",
   width: "360px",
   height: "400px",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "end",
+  justifyContent: "flex-end",
   padding: "16px",
   gap: "16px",
   borderRadius: "12px",
@@ -22,24 +22,24 @@ const CardContainer = {
   border: "1px solid rgba(255, 255, 255, 0.2)",
 };
 
-const CardImage = {
+const CardImage: CSSProperties = {
   width: "100%",
   height: "200px",
   objectFit: "cover",
   borderRadius: "8px",
 };
 
-const CardContent = {
+const CardContent: CSSProperties = {
   flex: 2,
 };
 
-const CardButtons = {
+const CardButtons: CSSProperties = {
   display: "flex",
   justifyContent: "space-between",
   marginTop: "12px",
 };
 
-const Button = {
+const Button: CSSProperties = {
   border: "none",
   color: "white",
   padding: "10px 20px",
@@ -54,17 +54,17 @@ const Button = {
   margin: "0 5px",
 };
 
-const ButtonSecondary = {
+const ButtonSecondary: CSSProperties = {
   ...Button,
   backgroundColor: "#545AA7",
 };
 
-const ButtonPrimary = {
+const ButtonPrimary: CSSProperties = {
   ...Button,
   backgroundColor: "#0C2340",
 };
 
-const Heading = {
+const Heading: CSSProperties = {
   fontSize: "22px",
   textTransform: "capitalize",
   fontWeight: "700",
@@ -73,7 +73,7 @@ const Heading = {
 
 const projects = [
   {
-    title: "𝙲𝚛𝚢𝚙𝚝𝚘 𝙰𝚙𝚙",
+    title: "ᑕᖇYᑭTO 𝙰𝚙𝚙",
     mockup:
       "https://cdn.dribbble.com/userupload/13799952/file/original-da19059e6b93db48b8e91b499c768751.jpg?resize=752x",
     live: "https://thecryptouniverse.vercel.app/",
@@ -94,13 +94,13 @@ const projects = [
     code: "https://github.com/theshobhitsingh/YT-Downloader",
   },
   {
-    title: "𝙿𝚛𝚘𝚛𝚒𝚝𝚢 𝙰𝚙𝚙",
+    title: "𝐏𝐫𝐢𝐨𝐫𝐢𝐭𝐲 𝙰𝚙𝚙",
     mockup: "/mockups/todoMock.png",
     live: "https://priority-scheduler.vercel.app/",
     code: "https://github.com/theshobhitsingh/Priority-Scheduler",
   },
   {
-    title: "𝙻𝚒𝚟𝚎 𝚆𝚎𝚊𝚝𝚑𝚎𝚛 𝙰𝚙𝚙",
+    title: "𝙻𝚒𝚟𝚎 𝚆𝚎𝚎𝚝𝚑𝚎𝚛 𝙰𝚙𝚙",
     mockup:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F884849.jpg&f=1&nofb=1&ipt=a7517aac0dbfd994b0d1535326b044ce35884c3e10d01a5cf89f63193c69a3b4&ipo=images",
     live: "https://theshobhitsingh.github.io/live_weather/",
@@ -123,7 +123,7 @@ const Portfolio = () => {
         href="https://github.com/theshobhitsingh"
         style={{ textDecoration: "none", color: "#0070f3", fontWeight: "bold" }}
       >
-        𝙿𝚛𝚘𝚏𝚒𝚕𝚎𝙼𝚎.𝚍𝚎𝚟
+        קг๏Ŧ𝚒𝚕𝚎𝙼𝚎.𝚍𝚎𝚟
       </Link>
       <div
         style={{
@@ -140,11 +140,21 @@ const Portfolio = () => {
             <div style={CardContent}>
               <h1 style={Heading}>{project.title}</h1>
               <div style={CardButtons}>
-                <a href={project.live} target="_blank" style={ButtonSecondary}>
-                  𝗟𝗶𝘃𝗲
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={ButtonSecondary}
+                >
+                  Ｌｉｖｅ
                 </a>
-                <a href={project.code} target="_blank" style={ButtonPrimary}>
-                  𝗦𝗼𝘂𝗿𝗰𝗲
+                <a
+                  href={project.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={ButtonPrimary}
+                >
+                  Ｓｏｕｒｃｅ
                 </a>
               </div>
             </div>
