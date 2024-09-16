@@ -20,16 +20,18 @@ const About = () => {
         <Prompt directory="/aboutMe" branch={true} content="cat README.md" />
         <p>
           <b>Hello there!</b> I'm Shobhit, a Full-stack dev <b>from India</b>,
-          specializing in <b>MERN stack</b>.I'm currently a studnt pursuing my
-          Bachelor's in Computer Applications focused on learning ReactJS,
-          NodeJS, ExpressJS, MongoDB, SQL, NextJS and more... Once I feel I've
-          become fairly proficient in my current stack, I plan to expand my
-          horizons to learn Rust and Dive Deep into the world of Blockchain
+          specializing in <b>MERN stack</b>.I'm currently a student pursuing my
+          Bachelor's in Computer Applications. I am dedicated & focused on
+          learning ReactJS, NodeJS, ExpressJS, MongoDB, SQL, NextJS and
+          more...to become a good Full-Stack Engineer. Once I feel i have become
+          fairly proficient in my current stack, I plan to expand my horizons to
+          learn Rust and Dive Deep into the world of Blockchain.
         </p>
         <p>
           Outside of my coding life, I love Reading Books and Discussing about
           Science, Innovation and Technology.
         </p>
+        <p>Join me on my Journey! Exciting things are coming up🚀</p>
       </FakeTerminalWindow>
 
       {/* skills & tools */}

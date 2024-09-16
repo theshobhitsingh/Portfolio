@@ -26,14 +26,14 @@ export const navLinks = [
     mobile: true,
   },
   {
-    label: "𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬",
-    href: "/portfolio",
-    mobile: true,
-  },
-  {
     label: <Logo />,
     href: "/",
     mobile: false,
+  },
+  {
+    label: "𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬",
+    href: "/portfolio",
+    mobile: true,
   },
   {
     label: "𝐌𝐨𝐫𝐞",

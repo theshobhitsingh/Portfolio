@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
     <div className="max-w-screen-lg w-full text-center py-6 opacity-60">
-      <p>Made with &hearts; by Shobhit Singh 🚀</p>
-      <p>&copy; 2024</p>
+      <p>Ｍａｄｅ　ｗｉｔｈ &hearts; ｂｙ Ｓｈｏｂｈｉｔ　Ｓｉｎｇｈ 🚀</p>
+      <p>&copy;２０２４</p>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
