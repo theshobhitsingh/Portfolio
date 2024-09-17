@@ -43,10 +43,6 @@ const socials = [
     icon: <FaLinkedin />,
     href: "https://linkedin.com/in/shobhit-singh-the-programmer",
   },
-  // {
-  //   icon: <FaXTwitter />,
-  //   href: "https://x.com/paytonpiercedev"
-  // },
   {
     icon: <SiLeetcode />,
     href: "https://leetcode.com/u/shobhit_singh_leetcode/",
