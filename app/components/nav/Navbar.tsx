@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from "next/link";
 import DarkModeToggle from "../DarkModeToggle";
 import MobileNavDropdown from "./MobileNavDropdown";
@@ -36,7 +37,7 @@ export const navLinks = [
     mobile: true,
   },
   {
-    label: "𝐌𝐨𝐫𝐞",
+    label: "𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐬",
     href: "/blog",
     mobile: true,
   },

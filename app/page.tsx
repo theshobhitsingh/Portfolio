@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode, SiGeeksforgeeks, SiHackerrank } from "react-icons/si";
@@ -68,10 +69,9 @@ export default function Home() {
           <h1 className="text-5xl">
             𝐇𝐢, I'm{" "}
             <span className="bg-gradient-to-tl from-indigo-600 to-fuchsia-600 text-transparent bg-clip-text font-bold">
-              丂卄ㄖ乃卄丨ㄒ
-              <WavingHand />
+              丂卄ㄖ乃卄𝐢𝐭
             </span>
-            {/* <WavingHand /> */}
+            <WavingHand />
           </h1>
           <h2 className="text-3xl">𝑰'𝒎 𝒂 𝑭𝒖𝒍𝒍-𝑺𝒕𝒂𝒄𝒌 𝑬𝒏𝒈𝒊𝒏𝒆𝒆𝒓.</h2>
         </div>
