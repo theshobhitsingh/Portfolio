@@ -123,7 +123,7 @@ const Projects: React.FC = () => {
         rel="noopener noreferrer"
         style={{ textDecoration: "none", color: "#000", fontWeight: "bold" }}
       >
-        קг๏Ŧ𝚒l𝚎𝙼𝚎.𝚙𝚕
+        קг๏Ŧ𝚒l𝚎𝙼𝚎.dev
       </Link>
       <div
         style={{
