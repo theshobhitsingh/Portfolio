@@ -124,7 +124,7 @@ const Portfolio = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center", }} className="-z-10">
       <p>𝘼𝙡𝙡 𝘾𝙤𝙣𝙩𝙧𝙞𝙗𝙪𝙩𝙞𝙤𝙣𝙨:</p>
       <Link
         href="https://github.com/theshobhitsingh"
