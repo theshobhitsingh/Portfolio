@@ -4,12 +4,21 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode, SiGeeksforgeeks, SiHackerrank } from "react-icons/si";
 // import { Profile } from "../public/My Profile/images";
 
+// const ProfilePicture = () => {
+//   return (
+//     <img
+//       src="https://github.com/theshobhitsingh/Portfolio/blob/main/public/My%20Profile/MyProfile.jpeg?raw=true"
+//       alt="Profile Picture"
+//       className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full w-[350px] md:w-2/5 p-3"
+//     />
+//   );
+// };
 const ProfilePicture = () => {
   return (
     <img
-      src="https://github.com/theshobhitsingh/Portfolio/blob/main/public/My%20Profile/MyProfile.jpeg?raw=true"
+      src="https://github.com/theshobhitsingh/Portfolio/blob/main/public/My%20Profile/MyProfile.png?raw=true"
       alt="Profile Picture"
-      className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full w-[350px] md:w-2/5 p-3"
+      className="rounded-full md:w-[500px] md:h-[500px] object-cover bg-gradient-to-br from-indigo-600 to-fuchsia-700"
     />
   );
 };
