@@ -1,3 +1,4 @@
+import React from "react";
 import FakeTerminalWindow from "../components/about/FakeTerminalWindow";
 import Prompt from "../components/about/Prompt";
 import { skills } from "../../lib/constants";

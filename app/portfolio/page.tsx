@@ -121,7 +121,7 @@ const Projects: React.FC = () => {
         href="https://github.com/theshobhitsingh"
         target="_blank"
         rel="noopener noreferrer"
-        style={{ textDecoration: "none", color: "#000", fontWeight: "bold" }}
+        style={{ textDecoration: "none", color: "#76ABDF", fontWeight: "bold" }}
       >
         קг๏Ŧ𝚒l𝚎𝙼𝚎.dev
       </Link>

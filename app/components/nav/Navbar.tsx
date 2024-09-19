@@ -45,7 +45,7 @@ export const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 backdrop-blur rounded-b-full">
+    <nav className="navbar sticky top-0 backdrop-blur rounded-b-full">
       <div className="w-full flex md:justify-center justify-between md:items-center md:gap-2">
         {/* desktop */}
         <ul className="menu menu-horizontal items-center gap-10 hidden md:flex ">
@@ -72,3 +72,28 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// const Navbar = () => {
+//   return (
+//     <nav className="navbar sticky top-0 bg-base-200 md:bg-base-100">
+//       <div className="w-full flex md:justify-center justify-between md:items-center md:gap-2">
+//         {/* desktop */}
+//         <ul className="menu menu-horizontal items-center gap-10 hidden md:flex">
+//           {navLinks.map((link, index) => (
+//             <li key={index}><Link href={link.href}>{link.label}</Link></li>
+//           ))}
+//           <li>
+//             <DarkModeToggle />
+//           </li>
+//         </ul>
+//         {/* mobile */}
+//         <MobileNavDropdown />
+//         <div className="md:hidden">
+//           <DarkModeToggle />
+//         </div>
+//       </div>
+//     </nav>
+//   )
+// }
+
+// export default Navbar;

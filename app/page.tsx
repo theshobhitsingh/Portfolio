@@ -78,7 +78,8 @@ export default function Home() {
           <h1 className="text-5xl">
             𝐇𝐢, I'm{" "}
             <span className="bg-gradient-to-tl from-indigo-600 to-fuchsia-600 text-transparent bg-clip-text font-bold">
-              丂卄ㄖ乃卄𝐢𝐭
+              {/* 丂卄ㄖ乃卄𝐢𝐭 */}
+              𝕊𝕙𝕠𝕓𝕙𝕚𝕥
             </span>
             <WavingHand />
           </h1>

@@ -1,3 +1,5 @@
+import React from "react";
+
 interface PromptProps {
   directory?: string;
   branch?: boolean;

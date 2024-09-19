@@ -1,3 +1,5 @@
+import React from "react";
+
 const SunIcon = ({ className }: { className?: string }) => {
   return (
     <svg

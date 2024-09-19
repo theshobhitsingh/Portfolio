@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-// Define TypeScript interfaces for the data
 interface LeetcodeData {
   totalSolved: number;
   ranking: number;
@@ -18,7 +17,6 @@ interface GfgData {
 }
 
 const Blog = () => {
-  // Define state with appropriate types
   const [leetcodeData, setLeetcodeData] = useState<LeetcodeData | null>(null);
   const [gfgData, setGfgData] = useState<GfgData | null>(null);
   const [leetcodeLoading, setLeetcodeLoading] = useState(true);
@@ -38,7 +36,6 @@ const Blog = () => {
         const data = await response.json();
         setLeetcodeData(data);
       } catch (error) {
-        // Type assertion to handle unknown error type
         setLeetcodeError((error as Error).message);
       } finally {
         setLeetcodeLoading(false);
@@ -60,7 +57,6 @@ const Blog = () => {
         const data = await response.json();
         setGfgData(data.data);
       } catch (error) {
-        // Type assertion to handle unknown error type
         setGfgError((error as Error).message);
       } finally {
         setGfgLoading(false);
