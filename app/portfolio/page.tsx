@@ -114,8 +114,10 @@ const Projects: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <style>{glowEffect}</style> {/* Inject the glow effect into the page */}
+    <div style={{ textAlign: "center", paddingTop: "80px" }}>
+      {" "}
+      {/* Adjust padding here */}
+      <style>{glowEffect}</style>
       <p>𝘼𝙡𝙡 𝘾𝙤𝙣𝙩𝙧𝙞𝙗𝙪𝙩𝙞𝙤𝙣𝙨:</p>
       <Link
         href="https://github.com/theshobhitsingh"
@@ -146,10 +148,20 @@ const Projects: React.FC = () => {
             <img src={project.mockup} alt={project.title} style={imageStyle} />
             <div style={{ padding: "16px" }}>
               <h2 style={titleStyle}>{project.title}</h2>
-              <Link href={project.live} target="_blank" rel="noopener noreferrer" style={liveButtonStyle}>
+              <Link
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={liveButtonStyle}
+              >
                 ᒪIᐯE
               </Link>
-              <Link href={project.code} target="_blank" rel="noopener noreferrer" style={sourceButtonStyle}>
+              <Link
+                href={project.code}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={sourceButtonStyle}
+              >
                 𝚂𝚘𝚞𝚛𝚌𝚎
               </Link>
             </div>
