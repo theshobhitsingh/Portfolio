@@ -31,7 +31,7 @@ const styles = {
     }
 
     .text-animation {
-      animation: fadeIn 0.5s forwards, fadeOut 0.5s forwards;
+      animation: fadeIn 0.2s forwards, fadeOut 0.5s forwards;
     }
 
     .fade-in {
@@ -99,9 +99,9 @@ const socials = [
 ];
 
 const phrases = [
-  "𝙄 𝙖𝙢 𝙖 𝙁𝙧𝙤𝙣𝙩𝙚𝙣𝙙 𝙀𝙣𝙜𝙞𝙣𝙚𝙚𝙧",
-  "𝙄 𝙖𝙢 𝙖 𝘽𝙖𝙘𝙠𝙚𝙣𝙙 𝙀𝙣𝙜𝙞𝙣𝙚𝙚𝙧",
-  "𝙄 𝙖𝙢 𝙖 𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙀𝙣𝙜𝙞𝙣𝙚𝙚𝙧",
+  "𝙄 𝙖𝙢 𝙖 𝘍𝘳𝘰𝘯𝘵-𝘌𝘯𝘥 𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳",
+  "𝙄 𝙖𝙢 𝙖 𝘉𝘢𝘤𝘬-𝘌𝘯𝘥 𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳",
+  "𝙄 𝙖𝙢 𝙖 𝘍𝘶𝘭𝘭 𝘚𝘵𝘢𝘤𝘬 𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳",
 ];
 
 export default function Home() {
@@ -115,16 +115,16 @@ export default function Home() {
         setIndex((prev) => (prev + 1) % phrases.length);
         setFadeClass("fade-in");
       }, 500);
-    }, 3000);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, []);
 
   const props = useSpring({
-    opacity: 1,
+    opacity: 0.7,
     from: { opacity: 0 },
     reset: true,
-    config: { duration: 500 },
+    config: { duration: 100 },
   });
 
   return (
@@ -136,7 +136,7 @@ export default function Home() {
           <h1 className="text-5xl">
             𝐇𝐢, I'm{" "}
             <span className="bg-gradient-to-tl from-indigo-600 to-fuchsia-600 text-transparent bg-clip-text font-bold">
-              𝕊𝕙𝕠𝕓𝕙𝕚𝕥
+              𝑺𝒉𝒐𝒃𝒉𝒊𝒕
             </span>
             <WavingHand />
           </h1>
