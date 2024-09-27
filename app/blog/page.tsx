@@ -67,34 +67,81 @@ const Blog = () => {
   }, []);
 
   return (
-    <section className="text-white font-sans min-h-screen flex items-center justify-center bg-gray-900">
-      <div className="max-w-6xl p-4 md:p-8 overflow-hidden">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center hover:scale-150 duration-300 bg-gradient-to-tl from-indigo-600 to-fuchsia-600 text-transparent bg-clip-text">
-          𝐂 𝐨 𝐝 𝐢 𝐧 𝐠 𝐏 𝐫 𝐨 𝐟 𝐢 𝐥 𝐞 𝐬
-        </h2>
+    <div>
+      <style>{`
+        .card {
+          transition: transform 0.3s, box-shadow 0.3s;
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .card::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 300%;
+          height: 300%;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+          transform: translate(-50%, -50%) scale(0);
+          transition: transform 0.6s ease-out;
+          filter: blur(20px);
+          z-index: 0;
+        }
+        
+        .card:hover::before {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .card:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+        }
+        
+        .card-content {
+          position: relative;
+          z-index: 1; /* Ensures content is above the pseudo-element */
+        }
+      `}</style>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* GitHub Section */}
-          <div
-            className="shadow-md rounded-lg p-6 md:p-10 text-center backdrop-blur-sm bg-white/10 border border-white/20"
-            data-aos="fade-down-right"
-          >
-            <h3 className="text-2xl md:text-3xl text-blue-400 mb-6">𝐆𝐢𝐭𝐇𝐮𝐛</h3>
-            <div>
-              <img
-                src="https://github-readme-stats.vercel.app/api?username=theshobhitsingh&show_icons=true&theme=radical&rank_icon=github&border_radius=10"
-                alt="GitHub Stats"
-                className="mx-auto mb-6"
-              />
-            </div>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-10 text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-fuchsia-600 animate-text">
+        𝐂 𝐨 𝐝 𝐢 𝐧 𝐠 𝐏 𝐫 𝐨 𝐟 𝐢 𝐥 𝐞 𝐬
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* GitHub Section */}
+        <div
+          className="card shadow-lg rounded-lg p-6 md:p-10 text-center backdrop-blur-sm bg-gray-800 border border-gray-700"
+          data-aos="fade-up"
+        >
+          <div className="card-content">
+            <h3 className="text-2xl md:text-3xl text-blue-500 mb-4 font-semibold">
+              𝐆𝐢𝐭𝐇𝐮𝐛
+            </h3>
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=theshobhitsingh&show_icons=true&theme=radical&rank_icon=github&border_radius=10"
+              alt="GitHub Stats"
+              className="mx-auto mb-4 rounded-lg shadow-md"
+            />
+            <a
+              href="https://github.com/theshobhitsingh"
+              className="text-blue-400 hover:text-blue-600"
+            >
+              View Profile
+            </a>
           </div>
+        </div>
 
-          {/* LeetCode Section */}
-          <div
-            className="shadow-md rounded-lg p-6 md:p-10 text-center backdrop-blur-sm bg-white/10 border border-white/20"
-            data-aos="fade-down"
-          >
-            <h3 className="text-2xl md:text-3xl text-orange-400 mb-6">𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞</h3>
+        {/* LeetCode Section */}
+        <div
+          className="card shadow-lg rounded-lg p-6 md:p-10 text-center backdrop-blur-sm bg-gray-800 border border-gray-700"
+          data-aos="fade-up"
+        >
+          <div className="card-content">
+            <h3 className="text-2xl md:text-3xl text-orange-400 mb-4 font-semibold">
+              𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞
+            </h3>
             {leetcodeLoading ? (
               <p className="text-gray-400">𝙻𝚘𝚊𝚍𝚒𝚗𝚎 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 𝙳𝚊𝚝𝚊...</p>
             ) : leetcodeError ? (
@@ -118,56 +165,60 @@ const Blog = () => {
                 </p>
                 <a
                   href="https://leetcode.com/u/shobhit_singh_leetcode/"
-                  className="text-orange-400 hover:text-orange-700 cursor-pointer"
+                  className="text-orange-400 hover:text-orange-700"
                 >
                   Viʂiƚ 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 𝙿𝚛𝚘𝚏𝚒𝚕𝚎
                 </a>
               </div>
             ) : null}
           </div>
+        </div>
 
-          {/* GeeksforGeeks Section */}
-          <div
-            className="shadow-md rounded-lg p-6 md:p-10 text-center backdrop-blur-sm bg-white/10 border border-white/20"
-            data-aos="fade-down-left"
-          >
-            <h3 className="text-2xl md:text-3xl text-green-600 mb-6">𝐆𝐞𝐞𝐤𝐬𝐟𝐨𝐫𝐆𝐞𝐞𝐤𝐬</h3>
+        {/* GeeksforGeeks Section */}
+        <div
+          className="card shadow-lg rounded-lg p-6 md:p-10 text-center backdrop-blur-sm bg-gray-800 border border-gray-700"
+          data-aos="fade-up"
+        >
+          <div className="card-content">
+            <h3 className="text-2xl md:text-3xl text-green-600 mb-4 font-semibold">
+              𝐆𝐞𝐞𝐤𝐬𝐟𝐨𝐫𝐆𝐞𝐞𝐤𝐬
+            </h3>
             {gfgLoading ? (
-              <p className="text-gray-400">𝙻𝚘𝚊𝚍𝚒𝚗𝚐 𝐆𝐞𝐞𝐤𝐬𝐟𝐨𝐫𝐆𝐞𝐞𝐤𝐬 𝙳𝚊𝚝𝚊...</p>
+              <p className="text-gray-400">𝙻𝚘𝚊𝚍𝚒𝚗𝚐 𝐆𝐞𝐞𝐤𝐬𝐟𝐨𝐫𝐆𝐞𝐞𝐤s 𝙳𝚊𝚝a...</p>
             ) : gfgError ? (
               <p className="text-red-400">ɆⱤⱤØⱤ: {gfgError}</p>
             ) : gfgData ? (
               <div>
                 <p className="text-gray-300 text-sm md:text-lg mt-4">
-                  𝙏𝙤𝙩𝙖𝙡 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.TotalProblemSolved}
+                  𝙏𝙤𝙩𝙖𝙡 S𝗼𝗹v𝗲𝗱: {gfgData.TotalProblemSolved}
                 </p>
                 <p className="text-pink-600 text-sm md:text-lg">
-                𝘉𝘢𝘴𝘪𝘤 𝘚𝘰𝘭𝘷𝘦𝘥: {83}
+                  Basic Solved: {gfgData.EasyProblemsSolved}
                 </p>
                 <p className="text-indigo-600 text-sm md:text-lg">
-                𝘚𝘤𝘩𝘰𝘰𝘭 𝘚𝘰𝘭𝘷𝘦𝘥: {20}
+                  School Solved: {gfgData.MediumProblemsSolved}
                 </p>
                 <p className="text-green-400 text-sm md:text-lg">
-                  𝘌𝘢𝘴𝘺 𝘚𝘰𝘭𝘷𝘦𝘥: {121}
+                  Easy Solved: {gfgData.EasyProblemsSolved}
                 </p>
                 <p className="text-yellow-500 text-sm md:text-lg">
-                  𝘔𝘦𝘥𝘪𝘶𝘮 𝘚𝘰𝘭𝘷𝘦𝘥: {97}
+                  Medium Solved: {gfgData.MediumProblemsSolved}
                 </p>
                 <p className="text-red-600 text-sm md:text-lg">
-                  𝘏𝘢𝘳𝘥 𝘚𝘰𝘭𝘷𝘦𝘥: {17}
+                  Hard Solved: {gfgData.HardProblemsSolved}
                 </p>
                 <a
                   href="https://www.geeksforgeeks.org/user/shobhit_singh_gfg/"
-                  className="text-green-400 hover:text-green-800 cursor-pointer"
+                  className="text-green-400 hover:text-green-800"
                 >
-                  𝗩𝗶𝘀𝗶𝘁 ⅁𝙛⅁ 𝗣𝗿𝗼𝗳𝗶𝗹𝗲
+                  𝗩𝗶𝗲𝗿 ⅁f⅁ P𝗿𝗼𝗳𝗶𝗹𝗲
                 </a>
               </div>
             ) : null}
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
