@@ -73,7 +73,7 @@ Here are some of my notable projects:
 - **Code**: [GitHub Repository](https://github.com/theshobhitsingh/YT-Downloader)
 
 ### 4. [𝐏𝐫𝐢𝐨𝐫𝐢𝐭𝐲 𝐀𝐩𝐩](https://priority-scheduler.vercel.app/)
-![Priority App](mockups/todoMock.png)
+![Priority App](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.NSZrfy0LiV4vTuZDfwg9DQHaEK%26pid%3DApi&f=1&ipt=1f724d8d542453e77f7520059c25e11a7a6b38fd8c62a88876b6469783f7e71b&ipo=images)
 - **Description**: A task management application to prioritize your daily activities.
 - **Code**: [GitHub Repository](https://github.com/theshobhitsingh/Priority-Scheduler)
 
