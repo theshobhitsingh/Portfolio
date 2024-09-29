@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  FaCode,
+  FaBook,
+  FaUsers,
+  FaRocket,
+  FaMicroscope,
+} from "react-icons/fa";
 import FakeTerminalWindow from "../components/about/FakeTerminalWindow";
 import Prompt from "../components/about/Prompt";
 import { skills } from "../../lib/constants";
@@ -20,14 +27,22 @@ const About = () => {
         <Prompt content="cd aboutMe/" />
         <Prompt directory="/aboutMe" branch={true} content="cat README.md" />
         <p>
-          <b>Hello there!</b> I'm Shobhit, a Full-stack dev <b>from India</b>,
-          specializing in <b>MERN stack</b>.I'm currently a student pursuing my
-          Bachelor's in Computer Applications. I am dedicated & focused on
-          learning ReactJS, NodeJS, ExpressJS, MongoDB, SQL, NextJS and
-          more...to become a good Full-Stack Engineer. Once I feel i have become
-          fairly proficient in my current stack, I plan to expand my horizons to
-          learn Rust and Dive Deep into the world of Blockchain.
+          <b>𝐇ello there!</b> I'm Shobhit, a passionate Full-Stack Developer{" "}
+          <b>from India</b> specializing in the <b>MERN stack</b>. Currently,
+          I'm pursuing my Bachelor's in Computer Applications, dedicating myself
+          to mastering technologies like <b>ReactJS</b>, <b>NodeJS</b>,{" "}
+          <b>ExpressJS</b>, <b>MongoDB</b>, <b>SQL</b>, and <b>NextJS</b>. My
+          goal is to become a proficient Full-Stack Engineer. Once I feel
+          confident in my current stack, I plan to expand my horizons by
+          learning <b>Rust</b> and diving deep into the exciting world of{" "}
+          <b>Blockchain</b>.
         </p>
+        <p>
+          I'm always eager to tackle new challenges and continuously improve my
+          skills. Let's connect and explore the endless possibilities in tech
+          together!
+        </p>
+
         <p>
           Outside of my coding life, I love Reading Books and Discussing about
           Science, Innovation and Technology.
@@ -68,12 +83,22 @@ const About = () => {
       <FakeTerminalWindow>
         <Prompt content="cd HobbiesAndInterests/" />
         <Prompt directory="/HobbiesAndInterests" branch={true} content="ls" />
-        <ul>
-          <li> 🧑‍💻 CӨDIПG </li>
-          <li> 🔭 𝚂𝚌𝚒𝚎𝚗𝚌𝚎 𝚊𝚗𝚍 𝚃𝚎𝚌𝚑𝚗𝚘𝚕𝚘𝚐𝚢 </li>
-          <li> 📚 𝚁𝚎𝚊𝚍𝚒𝚗𝚐 𝙱𝚘𝚘𝚔𝚜 </li>
-          <li> 🧠 𝙶𝚛𝚘𝚞𝚙 𝙳𝚒𝚜𝚌𝚞𝚜𝚜𝚜𝚒𝚘𝚗𝚜 </li>
-          <li> 🌌 𝙴𝚡𝚙𝚕𝚘𝚛𝚒𝚗𝚐 †𝚑𝚎 𝚄𝚗𝚒𝚟𝚎𝚛𝚜𝚎</li>
+        <ul className="space-y-2 text-xl">
+          <li className="flex items-center">
+            <FaCode className="mr-2" /> <b>𝙲𝚘𝚍𝚒𝚗𝚐</b>
+          </li>
+          <li className="flex items-center">
+            <FaMicroscope className="mr-2" /> <b>𝚂𝚌𝚒𝚎𝚗𝚌𝚎 𝚊𝚗𝚍 𝚃𝚎𝚌𝚑𝚗𝚘𝚕𝚘𝚐𝚢</b>
+          </li>
+          <li className="flex items-center">
+            <FaBook className="mr-2" /> <b>𝚁𝚎𝚊𝚍𝚒𝚗𝚐 𝙱𝚘𝚘𝚔𝚜</b>
+          </li>
+          <li className="flex items-center">
+            <FaUsers className="mr-2" /> <b>𝙶𝚛𝚘𝚞𝚙 𝙳𝚒𝚜𝚌𝚞𝚜𝚜𝚜𝚒𝚘𝚗𝚜</b>
+          </li>
+          <li className="flex items-center">
+            <FaRocket className="mr-2" /> <b>𝙴𝚡𝚙𝚕𝚘𝚛𝚒𝚗𝚐 †𝚑𝚎 𝚄𝚗𝚒𝚟𝚎𝚛𝚜𝚎</b>
+          </li>
         </ul>
       </FakeTerminalWindow>
     </div>
