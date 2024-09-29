@@ -38,7 +38,7 @@ Hello! I'm Shobhit, a student currently pursuing my Bachelor's in Computer Appli
 - Material UI
 - Ant Design
 - Shadcn
-- Splide
+- Spline
 
 ### Libraries & Frameworks
 - React
