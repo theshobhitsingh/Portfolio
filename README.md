@@ -1,108 +1,36 @@
-# Shobhit Singh's Digital Profile
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Welcome to my digital profile! I am a **Full-Stack Developer** based in **India**, specializing in the **MERN stack**.
+## Getting Started
 
-## About Me
+First, run the development server:
 
-Hello! I'm Shobhit, a student currently pursuing my Bachelor's in Computer Applications. My passion lies in mastering technologies such as **ReactJS**, **NodeJS**, and **MongoDB**. I'm also excited about expanding my skill set into **Rust** and exploring the world of **Blockchain**.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Skills
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Programming Languages
-- C/C++
-- JavaScript
-- TypeScript
-- Java
-- Python
-- PHP
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Frontend Skills
-- HTML5
-- CSS3
-- JavaScript
-- TypeScript
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-### Backend Skills
-- Node.js
-- Express.js
-- EJS
+## Learn More
 
-### Databases
-- MySQL
-- Oracle
-- MongoDB
+To learn more about Next.js, take a look at the following resources:
 
-### Styling
-- Bootstrap
-- Tailwind CSS
-- Material UI
-- Ant Design
-- Shadcn
-- Spline
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Libraries & Frameworks
-- React
-- Redux
-- Next.js
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Tools & Technologies
-- Git
-- GitHub
-- Axios
-- Appwrite
-- Firebase
-- Vercel
+## Deploy on Vercel
 
-## Projects
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Here are some of my notable projects:
-
-### 1. [𝐂𝐫𝐲𝐩𝐭𝐨 𝐖𝐨𝐫𝐥𝐝](https://thecryptouniverse.vercel.app/)
-![Crypto World](https://cdn.dribbble.com/userupload/13799952/file/original-da19059e6b93db48b8e91b499c768751.jpg?resize=400x300)
-- **Description**: A comprehensive platform for cryptocurrency tracking and news.
-- **Live**: [View Live](https://thecryptouniverse.vercel.app/)
-- **Code**: [GitHub Repository](https://github.com/theshobhitsingh/CryptoApp)
-
-### 2. [𝐍𝐞𝐰𝐬 𝐖𝐞𝐛 𝐀𝐩𝐩](https://news-nexus-alpha.vercel.app/)
-![News Web App](https://cdn.dribbble.com/userupload/3671842/file/original-95ad00366a64a19b9d6f1b1e2fda27c0.jpg?crop=0x0-1600x1200&resize=400x300&vertical=center)
-- **Description**: Stay updated with the latest news articles from various sources.
-- **Live**: [View Live](https://news-nexus-alpha.vercel.app/)
-- **Code**: [GitHub Repository](https://github.com/theshobhitsingh/News-Nexus)
-
-### 3. [𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐒𝐜𝐫𝐚𝐩𝐩𝐞𝐫](https://github.com/theshobhitsingh/YT-Downloader)
-![YouTube Scrapper](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.creativefabrica.com%2Fwp-content%2Fuploads%2F2022%2F03%2F26%2FYouTube-sign-dark-iconic-background-Graphics-27876508-1.jpg&f=1&nofb=1)
-- **Description**: A tool to download YouTube videos effortlessly.
-- **Live**: [View Live](https://github.com/theshobhitsingh/YT-Downloader)
-- **Code**: [GitHub Repository](https://github.com/theshobhitsingh/YT-Downloader)
-
-### 4. [𝐏𝐫𝐢𝐨𝐫𝐢𝐭𝐲 𝐀𝐩𝐩](https://priority-scheduler.vercel.app/)
-![Priority App](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.NSZrfy0LiV4vTuZDfwg9DQHaEK%26pid%3DApi&f=1&ipt=1f724d8d542453e77f7520059c25e11a7a6b38fd8c62a88876b6469783f7e71b&ipo=images)
-- **Description**: A task management application to prioritize your daily activities.
-- **Live**: [View Live](https://priority-scheduler.vercel.app/)
-- **Code**: [GitHub Repository](https://github.com/theshobhitsingh/Priority-Scheduler)
-
-### 5. [𝐋𝐢𝐯𝐞 𝐖𝐞𝐚𝐭𝐡𝐞𝐫 𝐀𝐩𝐩](https://theshobhitsingh.github.io/live_weather/)
-![Live Weather App](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F884849.jpg&f=1&nofb=1)
-- **Description**: Get real-time weather updates for your location.
-- **Live**: [View Live](https://theshobhitsingh.github.io/live_weather/)
-- **Code**: [GitHub Repository](https://github.com/theshobhitsingh/live_weather)
-
-### 6. [𝐒𝐢𝐦𝐨𝐧 𝐒𝐚𝐲𝐬 𝐎𝐧𝐥𝐢𝐧𝐞 𝐆𝐚𝐦𝐞](https://theshobhitsingh.github.io/simon_says/)
-![Simon Says Game](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplays.org%2Fscreenshots%2Fsimon-says-game.png&f=1&nofb=1)
-- **Description**: A fun online game to test your memory.
-- **Live**: [View Live](https://theshobhitsingh.github.io/simon_says/)
-- **Code**: [GitHub Repository](https://github.com/theshobhitsingh/simon_says)
-
-## Contact Me
-
-Feel free to reach out!
-
-- 📧 Email: [theshobhitt@gmail.com](mailto:theshobhitt@gmail.com)
-- GitHub: [@theshobhitsingh](https://github.com/theshobhitsingh)
-- LinkedIn: [Shobhit Singh](https://linkedin.com/in/shobhit-singh-the-programmer)
-
-## Resume
-
-[Download Resume](#)
-
-Thank you for visiting my digital profile! 🚀
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
