@@ -44,6 +44,20 @@ const projects = [
     live: "https://theshobhitsingh.github.io/simon_says/",
     code: "https://github.com/theshobhitsingh/simon_says",
   },
+  {
+    title: "𝐌𝐮𝐥𝐭𝐢𝐓𝐡𝐫𝐞𝐚𝐝𝐞𝐝 𝐖𝐞𝐛𝐒𝐞𝐫𝐯𝐞𝐫",
+    mockup:
+      "https://img.freepik.com/premium-photo/smart-data-centers-hd-8k-wallpaper-stock-photographic-image_915071-33308.jpg",
+    live: "https://github.com/theshobhitsingh/MultiThreaded-WebServer",
+    code: "https://github.com/theshobhitsingh/MultiThreaded-WebServer",
+  },
+  {
+    title: "𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐢𝐟𝐲",
+    mockup:
+      "https://www.defencetalk.com/wp-content/uploads/2020/01/data-encryption.jpg",
+    live: "https://github.com/theshobhitsingh/Encryptify",
+    code: "https://github.com/theshobhitsingh/Encryptify",
+  },
 ];
 
 const cardStyle: React.CSSProperties = {
