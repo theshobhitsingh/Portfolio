@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HamburgerDropdownIcon = () => {
   return (
-    <summary className="btn btn-ghost">
+    <summary className="btn btn-ghost z-50">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5"
@@ -41,16 +41,16 @@ const MobileNavDropdown = () => {
   }, []);
 
   return (
-    <details className="dropdown dropdown-start md:hidden">
+    <details className="dropdown dropdown-start md:hidden z-50">
       <HamburgerDropdownIcon />
       <ul
         tabIndex={0}
-        className="dropdown-content menu z-[1] bg-base-200 p-6 rounded-box shadow w-56 gap-2"
+        className="dropdown-content menu z-50 bg-base-200 p-6 rounded-box shadow w-56 gap-2"
       >
         {navLinks
           .filter((link) => link.mobile)
           .map((link, index) => (
-            <li key={index}>
+            <li key={index} className="z-50">
               <Link href={link.href}>{link.label}</Link>
             </li>
           ))}
