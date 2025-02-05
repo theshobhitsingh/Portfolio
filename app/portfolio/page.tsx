@@ -194,6 +194,7 @@ const Projects: React.FC = () => {
             }}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
+            className="z-40"
           >
             <img src={project.mockup} alt={project.title} style={imageStyle} />
             <div style={{ padding: "16px" }}>
