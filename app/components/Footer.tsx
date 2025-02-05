@@ -9,7 +9,7 @@ const Footer = () => {
       </p>
       <p className="mt-2 flex items-center justify-center">
         <FaRocket className="mr-2 text-xl" />
-        &copy; ２０２４
+        &copy; 2️⃣0️⃣2️⃣5️⃣
       </p>
     </div>
   );
