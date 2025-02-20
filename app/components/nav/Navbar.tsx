@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 import DarkModeToggle from "../DarkModeToggle";
 import MobileNavDropdown from "./MobileNavDropdown";
-// const Hello =  require("../../../public/logo.png")
 
+// Logo component
 const Logo = ({ className }: { className?: string }) => {
   return (
-    // <Hello/>
     <img
       alt="Logo"
       src="https://github.com/theshobhitsingh/Portfolio/blob/main/public/logo.png?raw=true"
-      className={`w-20 bg-cover `}
+      className={`w-20 bg-cover ${className}`}
     />
   );
 };
 
+// Navigation links
 export const navLinks = [
   {
     label: "𝐇𝐨𝐦𝐞",
@@ -45,7 +45,7 @@ export const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="navbar sticky top-0 backdrop-blur rounded-b-full">
+    <nav className="navbar sticky top-0 backdrop-blur rounded-b-full z-50">
       <div className="w-full flex md:justify-center justify-between md:items-center md:gap-2">
         {/* desktop */}
         <ul className="menu menu-horizontal items-center gap-10 hidden md:flex ">
@@ -60,9 +60,6 @@ const Navbar = () => {
         </ul>
         {/* mobile */}
         <MobileNavDropdown />
-        {/* <Link href="/">
-          <Logo className="md:hidden" />
-        </Link> */}
         <div className="md:hidden">
           <DarkModeToggle />
         </div>
@@ -72,6 +69,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 // const Navbar = () => {
 //   return (

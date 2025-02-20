@@ -49,13 +49,14 @@ const Blog = () => {
     const fetchGfgData = async () => {
       try {
         const response = await fetch(
-          "https://gfgstats.onrender.com/?userName=shobhit_singh_gfg"
+          "https://geeks-for-geeks-api.vercel.app/shobhit_singh_gfg"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch GeeksforGeeks data");
         }
         const data = await response.json();
         setGfgData(data.data);
+        console.log("hello", gfgData);
       } catch (error) {
         setGfgError((error as Error).message);
       } finally {
@@ -73,6 +74,7 @@ const Blog = () => {
           transition: transform 0.3s, box-shadow 0.3s;
           position: relative;
           overflow: hidden;
+          z-index: 1;
         }
         
         .card::before {
@@ -102,11 +104,11 @@ const Blog = () => {
         .card-content {
           position: relative;
           z-index: 1; /* Ensures content is above the pseudo-element */
-        }
+        };
       `}</style>
 
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-10 text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-fuchsia-600 animate-text">
-        𝐂 𝐨 𝐝 𝐢 𝐧 𝐠 𝐏 𝐫 𝐨 𝐟 𝐢 𝐥 𝐞 𝐬
+      𝑷𝒓𝒐𝒇𝒆𝒔𝒔𝒊𝒐𝒏𝒂𝒍 𝑷𝒓𝒐𝒇𝒊𝒍𝒆𝒔
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -143,7 +145,7 @@ const Blog = () => {
               𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞
             </h3>
             {leetcodeLoading ? (
-              <p className="text-gray-400">𝙻𝚘𝚊𝚍𝚒𝚗𝚎 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 𝙳𝚊𝚝𝚊...</p>
+              <p className="text-gray-400">Loading 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 Data...</p>
             ) : leetcodeError ? (
               <p className="text-red-600">ɆⱤⱤØⱤ: {leetcodeError}</p>
             ) : leetcodeData ? (
@@ -167,7 +169,7 @@ const Blog = () => {
                   href="https://leetcode.com/u/shobhit_singh_leetcode/"
                   className="text-orange-400 hover:text-orange-700"
                 >
-                  Viʂiƚ 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 𝙿𝚛𝚘𝚏𝚒𝚕𝚎
+                  Visiƚ 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 𝙿𝚛𝚘𝚏𝚒𝚕𝚎
                 </a>
               </div>
             ) : null}
@@ -184,34 +186,41 @@ const Blog = () => {
               𝐆𝐞𝐞𝐤𝐬𝐟𝐨𝐫𝐆𝐞𝐞𝐤𝐬
             </h3>
             {gfgLoading ? (
-              <p className="text-gray-400">𝙻𝚘𝚊𝚍𝚒𝚗𝚐 𝐆𝐞𝐞𝐤𝐬𝐟𝐨𝐫𝐆𝐞𝐞𝐤s 𝙳𝚊𝚝a...</p>
+              <p className="text-gray-400">𝙻𝚘𝚊𝚍𝚒𝚗𝚐 𝐆𝐞𝐞𝐤𝐬𝐟𝐨𝐫𝐆𝐞𝐞𝐤s 𝙳𝚊𝚝𝚊...</p>
             ) : gfgError ? (
               <p className="text-red-400">ɆⱤⱤØⱤ: {gfgError}</p>
             ) : gfgData ? (
               <div>
+                {/* Total problems solved */}
                 <p className="text-gray-300 text-sm md:text-lg mt-4">
-                  𝙏𝙤𝙩𝙖𝙡 S𝗼𝗹v𝗲𝗱: {gfgData.TotalProblemSolved}
+                  𝙏𝙤𝙩𝙖𝙡 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.easy.count}
                 </p>
-                <p className="text-pink-600 text-sm md:text-lg">
-                  Basic Solved: {gfgData.EasyProblemsSolved}
-                </p>
-                <p className="text-indigo-600 text-sm md:text-lg">
-                  School Solved: {gfgData.MediumProblemsSolved}
-                </p>
+
+                {/* Easy problems solved */}
                 <p className="text-green-400 text-sm md:text-lg">
-                  Easy Solved: {gfgData.EasyProblemsSolved}
+                  𝙀𝙖𝙨𝙮 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.easy.count}
                 </p>
+
+                {/* Medium problems solved */}
                 <p className="text-yellow-500 text-sm md:text-lg">
-                  Medium Solved: {gfgData.MediumProblemsSolved}
+                  𝙈𝙚𝙙𝙞𝙪𝙢 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.medium.count}
                 </p>
+
+                {/* Hard problems solved */}
                 <p className="text-red-600 text-sm md:text-lg">
-                  Hard Solved: {gfgData.HardProblemsSolved}
+                  𝙃𝙖𝙧𝙙 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.hard.count}
                 </p>
+
+                {/* School problems solved */}
+                <p className="text-indigo-600 text-sm md:text-lg">
+                  𝙎𝙘𝙝𝙤𝙤𝙡 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.school.count}
+                </p>
+
                 <a
                   href="https://www.geeksforgeeks.org/user/shobhit_singh_gfg/"
                   className="text-green-400 hover:text-green-800"
                 >
-                  𝗩𝗶𝗲𝗿 ⅁f⅁ P𝗿𝗼𝗳𝗶𝗹𝗲
+                  Visit ⅁f⅁ 
                 </a>
               </div>
             ) : null}
@@ -219,6 +228,8 @@ const Blog = () => {
         </div>
       </div>
     </div>
+    //   </div>
+    // </div>
   );
 };
 

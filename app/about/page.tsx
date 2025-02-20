@@ -27,8 +27,8 @@ const About = () => {
         <Prompt content="cd aboutMe/" />
         <Prompt directory="/aboutMe" branch={true} content="cat README.md" />
         <p>
-          <b>𝐇ello there!</b> I'm Shobhit, a passionate Full-Stack Developer{" "}
-          <b>from India</b> specializing in the <b>MERN stack</b>. Currently,
+          <b>𝐇𝐞𝐥𝐥𝐨 𝐖𝐨𝐫𝐥𝐝!</b> I'm Shobhit, a passionate Full-Stack Developer{" "}
+          <b>from India</b> specializing in the <b>MERN stack web development</b>. Currently,
           I'm pursuing my Bachelor's in Computer Applications, dedicating myself
           to mastering technologies like <b>ReactJS</b>, <b>NodeJS</b>,{" "}
           <b>ExpressJS</b>, <b>MongoDB</b>, <b>SQL</b>, and <b>NextJS</b>. My
