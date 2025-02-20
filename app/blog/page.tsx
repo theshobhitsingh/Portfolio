@@ -49,14 +49,15 @@ const Blog = () => {
     const fetchGfgData = async () => {
       try {
         const response = await fetch(
-          "https://geeks-for-geeks-api.vercel.app/shobhit_singh_gfg"
+          "https://portshobhit.onrender.com/gfgshobhit"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch GeeksforGeeks data");
         }
+        // console.log("hello", gfgData);
         const data = await response.json();
-        setGfgData(data.data);
-        console.log("hello", gfgData);
+        setGfgData(data);
+        // console.log("hello", gfgData);
       } catch (error) {
         setGfgError((error as Error).message);
       } finally {
