@@ -9,6 +9,7 @@ interface LeetcodeData {
   hardSolved: number;
 }
 
+// Updated GfgData type
 interface GfgData {
   TotalProblemSolved: number;
   EasyProblemsSolved: number;
@@ -18,7 +19,7 @@ interface GfgData {
 
 const Blog = () => {
   const [leetcodeData, setLeetcodeData] = useState<LeetcodeData | null>(null);
-  const [gfgData, setGfgData] = useState<GfgData | null>(null);
+  const [gfgData, setGfgData] = useState<any | null>(null);
   const [leetcodeLoading, setLeetcodeLoading] = useState(true);
   const [gfgLoading, setGfgLoading] = useState(true);
   const [leetcodeError, setLeetcodeError] = useState<string | null>(null);
@@ -54,10 +55,9 @@ const Blog = () => {
         if (!response.ok) {
           throw new Error("Failed to fetch GeeksforGeeks data");
         }
-        // console.log("hello", gfgData);
         const data = await response.json();
+        console.log("hello", data);
         setGfgData(data);
-        // console.log("hello", gfgData);
       } catch (error) {
         setGfgError((error as Error).message);
       } finally {
@@ -68,6 +68,10 @@ const Blog = () => {
     fetchGfgData();
   }, []);
 
+  if (leetcodeLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
       <style>{`
@@ -77,7 +81,7 @@ const Blog = () => {
           overflow: hidden;
           z-index: 1;
         }
-        
+
         .card::before {
           content: '';
           position: absolute;
@@ -92,24 +96,24 @@ const Blog = () => {
           filter: blur(20px);
           z-index: 0;
         }
-        
+
         .card:hover::before {
           transform: translate(-50%, -50%) scale(1);
         }
-        
+
         .card:hover {
           transform: scale(1.05);
           box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
         }
-        
+
         .card-content {
           position: relative;
-          z-index: 1; /* Ensures content is above the pseudo-element */
+          z-index: 1;
         };
       `}</style>
 
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-10 text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-fuchsia-600 animate-text">
-      𝑷𝒓𝒐𝒇𝒆𝒔𝒔𝒊𝒐𝒏𝒂𝒍 𝑷𝒓𝒐𝒇𝒊𝒍𝒆𝒔
+        𝑷𝒓𝒐𝒇𝒆𝒔𝒔𝒊𝒐𝒏𝒂𝒍 𝑷𝒓𝒐𝒇𝒊𝒍𝒆𝒔
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -192,36 +196,26 @@ const Blog = () => {
               <p className="text-red-400">ɆⱤⱤØⱤ: {gfgError}</p>
             ) : gfgData ? (
               <div>
-                {/* Total problems solved */}
                 <p className="text-gray-300 text-sm md:text-lg mt-4">
                   𝙏𝙤𝙩𝙖𝙡 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.easy.count}
                 </p>
-
-                {/* Easy problems solved */}
                 <p className="text-green-400 text-sm md:text-lg">
                   𝙀𝙖𝙨𝙮 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.easy.count}
                 </p>
-
-                {/* Medium problems solved */}
                 <p className="text-yellow-500 text-sm md:text-lg">
                   𝙈𝙚𝙙𝙞𝙪𝙢 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.medium.count}
                 </p>
-
-                {/* Hard problems solved */}
                 <p className="text-red-600 text-sm md:text-lg">
                   𝙃𝙖𝙧𝙙 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.hard.count}
                 </p>
-
-                {/* School problems solved */}
                 <p className="text-indigo-600 text-sm md:text-lg">
                   𝙎𝙘𝙝𝙤𝙤𝙡 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.school.count}
                 </p>
-
                 <a
                   href="https://www.geeksforgeeks.org/user/shobhit_singh_gfg/"
                   className="text-green-400 hover:text-green-800"
                 >
-                  Visit ⅁f⅁ 
+                  Visit ⅁f⅁
                 </a>
               </div>
             ) : null}
@@ -229,8 +223,6 @@ const Blog = () => {
         </div>
       </div>
     </div>
-    //   </div>
-    // </div>
   );
 };
 

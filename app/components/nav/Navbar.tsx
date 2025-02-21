@@ -45,7 +45,7 @@ export const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="navbar sticky top-0 backdrop-blur rounded-b-full z-50">
+    <nav className="navbar sticky top-0 backdrop-blur rounded-b-full z-[50]">
       <div className="w-full flex md:justify-center justify-between md:items-center md:gap-2">
         {/* desktop */}
         <ul className="menu menu-horizontal items-center gap-10 hidden md:flex ">
