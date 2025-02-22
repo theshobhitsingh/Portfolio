@@ -197,7 +197,7 @@ const Blog = () => {
             ) : gfgData ? (
               <div>
                 <p className="text-gray-300 text-sm md:text-lg mt-4">
-                  𝙏𝙤𝙩𝙖𝙡 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.easy.count}
+                  𝙏𝙤𝙩𝙖𝙡 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.info.totalProblemsSolved}
                 </p>
                 <p className="text-green-400 text-sm md:text-lg">
                   𝙀𝙖𝙨𝙮 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.easy.count}
