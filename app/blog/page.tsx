@@ -124,7 +124,7 @@ const Blog = () => {
         >
           <div className="card-content">
             <h3 className="text-2xl md:text-3xl text-blue-500 mb-4 font-semibold">
-              𝐆𝐢𝐭𝐇𝐮𝐛
+              𝗚𝗶𝘁𝗛𝘂𝗯
             </h3>
             <img
               src="https://github-readme-stats.vercel.app/api?username=theshobhitsingh&show_icons=true&theme=radical&rank_icon=github&border_radius=10"
@@ -135,7 +135,7 @@ const Blog = () => {
               href="https://github.com/theshobhitsingh"
               className="text-blue-400 hover:text-blue-600"
             >
-              View Profile
+              𝑉𝑖𝑒𝑤 𝙂𝙞𝙩𝙃𝙪𝙗 𝑃𝑟𝑜𝑓𝑖𝑙𝑒
             </a>
           </div>
         </div>
@@ -147,7 +147,7 @@ const Blog = () => {
         >
           <div className="card-content">
             <h3 className="text-2xl md:text-3xl text-orange-400 mb-4 font-semibold">
-              𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞
+              𝗟𝗲𝗲𝘁𝗖𝗼𝗱𝗲
             </h3>
             {leetcodeLoading ? (
               <p className="text-gray-400">Loading 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 Data...</p>
@@ -156,25 +156,25 @@ const Blog = () => {
             ) : leetcodeData ? (
               <div>
                 <p className="text-gray-300 text-sm md:text-lg mt-4">
-                  𝙏𝙤𝙩𝙖𝙡 𝙎𝙤𝙡𝙫𝙚𝙙: {leetcodeData.totalSolved}
+                  𝙏𝙤𝙩𝙖𝙡 𝙋𝙧𝙤𝙗𝙡𝙚𝙢𝙨 𝙎𝙤𝙡𝙫𝙚𝙙 ➻ {leetcodeData.totalSolved}
                 </p>
                 <p className="text-gray-300 text-sm md:text-lg">
-                  𝙒𝙤𝙧𝙡𝙙 𝙍𝙖𝙣𝙠: {leetcodeData.ranking}
+                  𝗪𝗼𝗿𝗹𝗱 𝗥𝗮𝗻𝗸𝗶𝗻𝗴 ➛ {leetcodeData.ranking}
                 </p>
                 <p className="text-green-400 text-sm md:text-lg">
-                  𝘌𝘢𝘴𝘺 𝘚𝘰𝘭𝘷𝘦𝘥: {leetcodeData.easySolved}
+                  𝑬𝒂𝒔𝒚 𝑺𝒐𝒍𝒗𝒆𝒅 ➳ {leetcodeData.easySolved}
                 </p>
                 <p className="text-yellow-500 text-sm md:text-lg">
-                  𝘔𝘦𝘥𝘪𝘶𝘮 𝘚𝘰𝘭𝘷𝘦𝘥: {leetcodeData.mediumSolved}
+                  𝑴𝒆𝒅𝒊𝒖𝒎 𝑺𝒐𝒍𝒗𝒆𝒅 ➳ {leetcodeData.mediumSolved}
                 </p>
                 <p className="text-red-600 text-sm md:text-lg">
-                  𝘏𝘢𝘳𝘥 𝘚𝘰𝘭𝘷𝘦𝘥: {leetcodeData.hardSolved}
+                  𝑯𝒂𝒓𝒅 𝑺𝒐𝒍𝒗𝒆𝒅 ➳ {leetcodeData.hardSolved}
                 </p>
                 <a
                   href="https://leetcode.com/u/shobhit_singh_leetcode/"
                   className="text-orange-400 hover:text-orange-700"
                 >
-                  Visiƚ 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 𝙿𝚛𝚘𝚏𝚒𝚕𝚎
+                  ᐯi̊ѕi̊т 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 𝙿𝚛𝚘𝚏𝚒𝚕𝚎
                 </a>
               </div>
             ) : null}
@@ -188,7 +188,7 @@ const Blog = () => {
         >
           <div className="card-content">
             <h3 className="text-2xl md:text-3xl text-green-600 mb-4 font-semibold">
-              𝐆𝐞𝐞𝐤𝐬𝐟𝐨𝐫𝐆𝐞𝐞𝐤𝐬
+              𝗚𝗲𝗲𝗸𝘀𝗳𝗼𝗿𝗚𝗲𝗲𝗸𝘀
             </h3>
             {gfgLoading ? (
               <p className="text-gray-400">𝙻𝚘𝚊𝚍𝚒𝚗𝚐 𝐆𝐞𝐞𝐤𝐬𝐟𝐨𝐫𝐆𝐞𝐞𝐤s 𝙳𝚊𝚝𝚊...</p>
@@ -197,25 +197,28 @@ const Blog = () => {
             ) : gfgData ? (
               <div>
                 <p className="text-gray-300 text-sm md:text-lg mt-4">
-                  𝙏𝙤𝙩𝙖𝙡 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.info.totalProblemsSolved}
-                </p>
-                <p className="text-green-400 text-sm md:text-lg">
-                  𝙀𝙖𝙨𝙮 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.easy.count}
-                </p>
-                <p className="text-yellow-500 text-sm md:text-lg">
-                  𝙈𝙚𝙙𝙞𝙪𝙢 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.medium.count}
-                </p>
-                <p className="text-red-600 text-sm md:text-lg">
-                  𝙃𝙖𝙧𝙙 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.hard.count}
+                  𝙏𝙤𝙩𝙖𝙡 𝙋𝙧𝙤𝙗𝙡𝙚𝙢𝙨 𝙎𝙤𝙡𝙫𝙚𝙙 ➻ {gfgData.info.totalProblemsSolved}
                 </p>
                 <p className="text-indigo-600 text-sm md:text-lg">
-                  𝙎𝙘𝙝𝙤𝙤𝙡 𝙎𝙤𝙡𝙫𝙚𝙙: {gfgData.solvedStats.school.count}
+                  𝑺𝒄𝒉𝒐𝒐𝒍 𝑺𝒐𝒍𝒗𝒆𝒅 ➳ {gfgData.solvedStats.school.count}
+                </p>
+                 <p className="text-purple-500 text-sm md:text-lg">
+                   𝑩𝒂𝒔𝒊𝒄 𝑺𝒐𝒍𝒗𝒆𝒅 ➳ {gfgData.solvedStats.basic.count}
+                </p>
+                <p className="text-green-400 text-sm md:text-lg">
+                  𝑬𝒂𝒔𝒚 𝑺𝒐𝒍𝒗𝒆𝒅 ➳ {gfgData.solvedStats.easy.count}
+                </p>
+                <p className="text-yellow-500 text-sm md:text-lg">
+                  𝑴𝒆𝒅𝒊𝒖𝒎 𝑺𝒐𝒍𝒗𝒆𝒅 ➳ {gfgData.solvedStats.medium.count}
+                </p>
+                <p className="text-red-600 text-sm md:text-lg">
+                  𝑯𝒂𝒓𝒅 𝑺𝒐𝒍𝒗𝒆𝒅 ➳ {gfgData.solvedStats.hard.count}
                 </p>
                 <a
                   href="https://www.geeksforgeeks.org/user/shobhit_singh_gfg/"
                   className="text-green-400 hover:text-green-800"
                 >
-                  Visit ⅁f⅁
+                  ᐯi̊ѕi̊т ⅁f⅁ 𝙿𝚛𝚘𝚏𝚒𝚕𝚎
                 </a>
               </div>
             ) : null}
