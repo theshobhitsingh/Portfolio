@@ -248,7 +248,7 @@ const projects = [
   {
     title: "𝗖𝗿𝘆𝗽𝘁𝗼 𝗨𝗻𝗶𝘃𝗲𝗿𝘀𝗲",
     mockup:
-      "https://scontent-del2-3.xx.fbcdn.net/v/t39.30808-6/394773684_317022850942266_6568933141082428595_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Xgj2kBHdofcQ7kNvgHKSn5X&_nc_zt=23&_nc_ht=scontent-del2-3.xx&_nc_gid=A9hfMDk8ZHzoebKec5G9OlK&oh=00_AYDc1M9OKl33qQots5dqSjVlqIZ-65fAO9jH8V5iHXVn1Q&oe=67BC9C0B",
+      "https://www.prosegur.com/dam/jcr:a808e88d-aaf0-47c0-956d-d481ca8694fc/shutterstock_1929459776%20(1).jpg",
     live: "https://thecryptouniverse.vercel.app/",
     code: "https://github.com/theshobhitsingh/CryptoApp",
   },
